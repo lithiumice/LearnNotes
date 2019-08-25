@@ -20,6 +20,16 @@ sudo apt-get update -y
 sudo apt-get install flat-remix-icons -y
 sudo apt autoremove -y
 
+# install netease music
+wget http://d1.music.126.net/dmusic/netease-cloud-music_1.2.1_amd64_ubuntu_20190428.deb
+sudo dpkg -i netease-cloud-music*.deb
+chmod 777 ~/.cache/netease-cloud-music
+
+# install communitheme
+sudo snap install communitheme –edge
+sudo snap install telegram-sergiusens
+sudo snap refresh
+
 # install dock dash
 cd ~/Downloads
 git clone https://github.com/micheleg/dash-to-dock.git
@@ -74,6 +84,7 @@ sudo apt update
 gsettings set org.gnome.desktop.peripherals.touchpad send-events enabled # 启动touch pad
 gsettings set org.gnome.desktop.peripherals.touchpad tap-to-click true # 启动单击
 gsettings set org.gnome.desktop.peripherals.touchpad natural-scroll true ## 修改滑动方向
+gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'minimize'
 
 mkdir ~/Downloads
 mkdir ~/Documents

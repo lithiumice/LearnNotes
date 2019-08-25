@@ -1,11 +1,12 @@
 #!/bin/bash
 
 #install software
-sudo apt-get update
-sudo apt-get upgrade
 sudo add-apt-repository ppa:noobslab/themes
 sudo add-apt-repository ppa:noobslab/icons
+sudo add-apt-repository ppa:numix/ppa
 sudo apt-get update
+
+sudo apt-get install numix-icon-theme-circle
 sudo apt-get install arc-theme ultra-flat-icons
 sudo apt install git
 sudo apt-get install redshift-gtk

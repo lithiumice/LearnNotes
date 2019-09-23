@@ -1,0 +1,16 @@
+// a6_18.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include "../thrlink.h"
+
+int main(int argc, char* argv[])
+{
+	PTBNode r,p,q;	
+	char nodes[]="#RABC DE  ";
+	r=CreateBiTree(nodes,1,9);
+	CreateInThread(&p,r);	
+	q=InOrderPrior(p->left->left);
+	printf("%c",q->data);	
+	return 0;
+}

@@ -1,0 +1,101 @@
+save (r.mat)
+{此类型的变量不支持使用点进行索引。
+} 
+save (r)
+{错误使用 <a href="matlab:matlab.internal.language.introspective.errorDocCallback('save')" style="font-weight:bold">save</a>
+必须为字符串标量或字符向量。
+} 
+x=0:10
+
+x =
+
+     0     1     2     3     4     5     6     7     8     9    10
+
+y=9:-1:0
+
+y =
+
+     9     8     7     6     5     4     3     2     1     0
+
+z=[x,y]
+
+z =
+
+  1 至 15 列
+
+     0     1     2     3     4     5     6     7     8     9    10     9     8     7     6
+
+  16 至 21 列
+
+     5     4     3     2     1     0
+
+c=[x y]
+
+c =
+
+  1 至 15 列
+
+     0     1     2     3     4     5     6     7     8     9    10     9     8     7     6
+
+  16 至 21 列
+
+     5     4     3     2     1     0
+
+bar(z,'k')
+hold in
+{错误使用 <a href="matlab:matlab.internal.language.introspective.errorDocCallback('hold', 'G:\Program Files\MATLAB\R2018a\toolbox\matlab\graphics\hold.m', 83)" style="font-weight:bold">hold</a> (<a href="matlab: opentoline('G:\Program Files\MATLAB\R2018a\toolbox\matlab\graphics\hold.m',83,0)">line 83</a>)
+未知的命令选项。
+} 
+hold on
+plot(z,'or-')
+lxx
+{未定义函数或变量 'linespace'。
+
+出错 <a href="matlab:matlab.internal.language.introspective.errorDocCallback('lxx', 'G:\MATLAB-demo\lxx.m', 3)" style="font-weight:bold">lxx</a> (<a href="matlab: opentoline('G:\MATLAB-demo\lxx.m',3,0)">line 3</a>)
+t= linespace(0,12*pi,360);
+} 
+lxx
+rand
+
+ans =
+
+    0.9058
+
+
+rand
+
+ans =
+
+    0.1270
+
+rand
+
+ans =
+
+    0.9134
+
+rand(3)
+
+ans =
+
+    0.6324    0.5469    0.1576
+    0.0975    0.9575    0.9706
+    0.2785    0.9649    0.9572
+
+rand(3,1)
+
+ans =
+
+    0.4854
+    0.8003
+    0.1419
+
+[X,Y] = meshgrid(-2:.2:2);                                
+Z = X .* exp(-X.^2 - Y.^2);
+surf(X,Y,Z)
+t = 0:pi/10:2*pi;
+[X,Y,Z] = cylinder(4*cos(t));
+subplot(2,2,1); mesh(X); title('X');
+subplot(2,2,2); mesh(Y); title('Y');
+subplot(2,2,3); mesh(Z); title('Z');
+subplot(2,2,4); mesh(X,Y,Z); title('X,Y,Z');

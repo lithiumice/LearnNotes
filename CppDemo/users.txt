@@ -1,3 +1,0 @@
-Admin = users\admin\ss.ini
-Guest = users\guest\ss.ini
-LITHIUM = users\lithium\ss.ini
